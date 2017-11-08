@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mainWrapper kbd{
+    font-size: 2em;
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+    border: 1px  solid #F0F0F0 ;
+    margin: 5px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 5px;   
+    position:relative;
+    border-radius: 5px;
+    box-shadow: 3px 1px 68px -19px rgba(0,0,0,0.34);
+}
+
+.mainWrapper div:last-child{
+    text-align: left;
+    margin-left: 6em;
+}
+
+.mainWrapper kbd:hover > button{
+    display: inline-block;
+}
+
+.mainWrapper kbd > button{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    display: none;
+}
+
+main{
+    text-align: center;
+    border: 1px solid blue;
+}
+main > .mainWrapper {
+    border: 1px solid red;
+    display: inline-block;
+    text-align: center;
+}
