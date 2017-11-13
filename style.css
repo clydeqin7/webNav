@@ -1,57 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
 }
 
-header>kbd.test{
+/*header>kbd.test{
     margin: 10px;
     display: inline-block;
     width: 60px;
     height: 60px;
     border: 0.5px solid #D1D1D1;
     background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 100%);
-    box-shadow: 0px 3px 3px 0px rgba(148, 148, 148, 0.75), 0px 5px 0px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 3px 0px rgba(151, 151, 151, 0.75), 0px 5px 0px 3px rgba(0, 0, 0, 0.75);
     border-radius: 3px;
+}*/
+
+body {
+  background: grey url(./wall.jpg) no-repeat center center;
+}
+.mainWrapper kbd {
+  font-size: 1.5em;
+  color: #777777;
+  font-family: sans-serif;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  margin: 10px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 5px;
+  position: relative;
+  border: 0.5px solid #d1d1d1;
+  background: linear-gradient(to bottom, #ffffff 0%, #f3f3f3 100%);
+  box-shadow: 0px 3px 3px 0px rgba(151, 151, 151, 0.75),
+    0px 5px 0px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 
-a{
-    text-decoration: none;
+.mainWrapper kbd img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
 }
 
-.mainWrapper kbd{
-    font-size: 2em;
-    width: 3em;
-    height: 3em;
-    display: inline-block;
-    margin: 5px;
-    text-transform: uppercase;
-    text-align: left;
-    padding-left: 5px;   
-    position:relative;
-    border-radius: 5px;
-    box-shadow: 3px 1px 68px -19px rgba(0,0,0,0.34);
+.mainWrapper div:last-child {
+  text-align: left;
+  margin-left: 6em;
 }
 
-.mainWrapper div:last-child{
-    text-align: left;
-    margin-left: 6em;
+.mainWrapper kbd:hover > button {
+  display: inline-block;
 }
 
-.mainWrapper kbd:hover > button{
-    display: inline-block;
+.mainWrapper kbd > button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
 }
 
-.mainWrapper kbd > button{
-    position: absolute;
-    right:0;
-    bottom: 0;
-    display: none;
-}
-
-main{
-    text-align: center;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 main > .mainWrapper {
-    display: inline-block;
-    text-align: center;
+  padding: 20px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  background: linear-gradient(to bottom, #dcdcdc 0%, #cccccc 50%, #c3c3c3 100%);
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px 0px rgba(151, 151, 151, 0.75),
+    0px 5px 0px 3px rgba(0, 0, 0, 0.75);
+  opacity: 0.95;
+}
+
+main kbd button {
+  color: #777777;
 }
