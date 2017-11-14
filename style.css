@@ -18,7 +18,7 @@ a {
 }*/
 
 body {
-  background: grey url(./wall.jpg) no-repeat center center;
+  background: grey url('./imgSrc/wall.jpg') no-repeat center center;
 }
 .mainWrapper kbd {
   font-size: 1.5em;
