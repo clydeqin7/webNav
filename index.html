@@ -16,9 +16,12 @@
             <div class="search">
                 <input type="text" id="searchInput" class="searchInput" 
                 placeholder="Search something">
-                <input type="button" value="Google" class="seachButton">
-                <input type="button" value="Bing" class="seachButton">
-                <input type="button" value="Baidu" class="seachButton">
+                <input type="button" value="Google" class="seachButton" 
+                onclick="window.open('http://www.google.com/search?q='+searchInput.value,'')">
+                <input type="button" value="Bing" class="seachButton"
+                onclick="window.open('https://www.bing.com/search?q='+searchInput.value,'')">
+                <input type="button" value="Baidu" class="seachButton" 
+                onclick="window.open('http://www.baidu.com/s?wd='+searchInput.value,'')">
             </div>
         </div>
     </header>

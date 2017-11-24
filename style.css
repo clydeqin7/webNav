@@ -18,8 +18,63 @@ a {
 }*/
 
 body {
-  background: grey url('./imgSrc/wall.jpg') no-repeat center center;
+  background: grey url('./imgSrc/wall.png') no-repeat center center;
 }
+
+hearder div.search{
+  margin: 12px 0px;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  background: #24292E;
+  box-shadow: 0px 2px 1px 0px rgba(184,184,184,1);
+}
+header > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header div.search .searchInput {
+  margin: 11px;
+  padding: 7px 10px; 
+  line-height: 17px;
+  width:280px;
+  border-radius: 5px;
+  background: #3F4448;
+  border: none;
+  color: #FFFFFF 
+}
+
+header div.search .searchInput:focus {
+   background: #4B4F53;
+   outline: none;
+   outline-offset: none;
+   color: #FFFFFF;
+}
+
+header div.search .seachButton{
+  margin: 11px 0;
+  padding: 6px 5px; 
+  line-height: 17px;
+  border-radius: 5px;
+  color: #C8C9CB;
+  border: 1px solid  #3F4448; 
+  background: #24292E
+}
+
+header div.search .seachButton:hover {
+  cursor:pointer; 
+}
+
+header div.search .seachButton:focus {
+   background: #4B4F53;
+   outline: none;
+   outline-offset: none;
+}
+
 .mainWrapper kbd {
   font-size: 1.5em;
   color: #777777;
@@ -85,56 +140,3 @@ main kbd button {
   color: #777777;
 }
 
-hearder div.search{
-  margin: 12px 0px;
-}
-
-header{
-  border: 1px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #24292E;
-}
-
-header div.search {
-
-}
-
-header div.search .searchInput {
-  margin: 11px;
-  padding: 7px 10px; 
-  line-height: 17px;
-  width:280px;
-  border-radius: 5px;
-  background: #3F4448;
-  border: none;
-  color: #FFFFFF 
-}
-
-header div.search .searchInput:focus {
-   background: #4B4F53;
-   outline: none;
-   outline-offset: none;
-   color: #FFFFFF;
-}
-
-header div.search .seachButton{
-  margin: 11px 0;
-  padding: 6px 5px; 
-  line-height: 17px;
-  border-radius: 5px;
-  color: #C8C9CB;
-  border: 1px solid  #3F4448; 
-  background: #24292E
-}
-
-header div.search .seachButton:hover {
-  cursor:pointer; 
-}
-
-header div.search .seachButton:focus {
-   background: #4B4F53;
-   outline: none;
-   outline-offset: none;
-}
