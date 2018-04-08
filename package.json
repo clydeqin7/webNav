@@ -1,0 +1,24 @@
+{
+  "name": "webNav",
+  "version": "1.0.0",
+  "description": "网站导航页",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clydeqin7/webNav.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clydeqin7/webNav/issues"
+  },
+  "homepage": "https://github.com/clydeqin7/webNav#readme",
+  "devDependencies": {
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14"
+  }
+}
