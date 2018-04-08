@@ -42,7 +42,7 @@
             }
 
             img2.onerror = function () {
-                img2.src = './img/point.png'
+                img2.src = './src/img/point.png'
             }
 
             //将修改后的hash存到localStorage
@@ -57,11 +57,11 @@
         if (domain) {
             imgX.src = 'http://' + domain + '/favicon.ico'
         } else {
-            imgX.src = './img/point.png'
+            imgX.src = './src/img/point.png'
         }
 
         imgX.onerror = function (xxx) {
-            xxx.target.src = './img/point.png'
+            xxx.target.src = './src/img/point.png'
         }
 
         return imgX
