@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网站导航</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
+</head>
+
+<body>
+    <header>
+        <div>   
+            <div class="search">
+                <input type="text" id="searchInput" class="searchInput" 
+                placeholder="Search something">
+                <input type="button" value="Google" class="seachButton" 
+                onclick="window.open('http://www.google.com/search?q='+searchInput.value,'')">
+                <input type="button" value="Bing" class="seachButton"
+                onclick="window.open('https://www.bing.com/search?q='+searchInput.value,'')">
+                <input type="button" value="Baidu" class="seachButton" 
+                onclick="window.open('http://www.baidu.com/s?wd='+searchInput.value,'')">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mainWrapper" id="mainxx"></div>
+    </main>
+    <footer></footer>
+<script src="./index.js"></script>
+</body>
+
+</html>

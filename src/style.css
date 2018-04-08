@@ -18,7 +18,7 @@ a {
 }*/
 
 body {
-  background: grey url('./imgSrc/wall.png') no-repeat center center;
+  background: grey url('./img/wall.png') no-repeat center center;
 }
 
 hearder div.search{
